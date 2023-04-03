@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-image: url(assets/fundo.svg);
+}
+
+.garden {
+  margin: 200px auto 0;
+  display: grid;
+  grid-template-areas: "A B C D"
+  "E F G H"
+  "I J K L" ;
+  gap: 48px;
+}
+
+.garden .mole-hole:nth-child(1) {
+  animation: start 2s;
+  animation-fill-mode: forwards;
+}
+.garden .mole-hole:nth-child(4) {
+  animation: start 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+.garden .mole-hole:nth-child(7) {
+  animation: start 2.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+.garden .mole-hole:nth-child(9) {
+  animation: start 1.5s;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes start{
+  0% {
+    opacity: 0;
+    background: url(assets/toupeira1.svg);
+  }
+  20% {
+    background: url(assets/toupeira2.svg);
+  }
+  40% {
+    background: url(assets/toupeira3.svg);
+  }
+  60% {
+    background: url(assets/toupeira4.svg);
+  }
+  80% {
+    background: url(assets/toupeira5.svg);
+  }
+  100% {
+    background: url(assets/toupeira6.svg);
+  }
+}
+
+.garden .mole-hole:nth-child(1) {
+  grid-area: A;
+}
+.garden .mole-hole:nth-child(2) {
+  grid-area: B;
+}
+.garden .mole-hole:nth-child(3) {
+  grid-area: C;
+}
+.garden .mole-hole:nth-child(4) {
+  grid-area: D;
+}
+.garden .mole-hole:nth-child(5) {
+  grid-area: E;
+}
+.garden .mole-hole:nth-child(6) {
+  grid-area: F;
+}
+.garden .mole-hole:nth-child(7) {
+  grid-area: G;
+}
+.garden .mole-hole:nth-child(8) {
+  grid-area: H;
+}
+.garden .mole-hole:nth-child(9) {
+  grid-area: I;
+}
+.garden .mole-hole:nth-child(10) {
+  grid-area: J;
+}
+.garden .mole-hole:nth-child(11) {
+  grid-area: K;
+}
+.garden .mole-hole:nth-child(12) {
+  grid-area: L;
+}
+
