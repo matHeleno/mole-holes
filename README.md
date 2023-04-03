@@ -1,3 +1,3 @@
 # mole-holes
-*animation
-*key-frames
+* animation
+* key-frames
